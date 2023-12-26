@@ -78,3 +78,7 @@ footer a{
   display: flex;
   justify-content: center;
 }
+
+.bg-footer {
+  display: inline-block;
+}
