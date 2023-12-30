@@ -83,4 +83,5 @@ footer a{
   display: inline-block;
   width: 150px;
   height: 100vh;
+  visibility: hidden;
 }
