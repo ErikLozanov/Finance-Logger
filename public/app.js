@@ -1,17 +1,8 @@
 "use strict";
-// classes
-class Invoice {
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    format() {
-        return `${this.client} owes $${this.amount} for ${this.details}`;
-    }
-}
-const invOne = new Invoice('Mario', 'work on website', 25);
-const invTwo = new Invoice('Luigi', 'clean street', 65);
+Object.defineProperty(exports, "__esModule", { value: true });
+const invoice_1 = require("./classes/invoice");
+const invOne = new invoice_1.Invoice('Mario', 'work on website', 25);
+const invTwo = new invoice_1.Invoice('Luigi', 'clean street', 65);
 let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
