@@ -1,4 +1,36 @@
-import {Invoice} from './classes/invoice';
+import {Invoice} from './classes/invoice.js';
+import { Payment } from './classes/Payment.js';
+import { HasFormatter } from './interfaces/HasFormatter.js';
+// interfaces
+
+interface IsPerson {
+    name: string,
+    age: number,
+    speak(a: string): void;
+    spend(a: number): number;
+};
+
+const me: IsPerson = {
+    name: 'Shaun',
+    age: 30,
+    speak(text: string): void {
+        console.log(text);
+    },
+    spend(amount: number): number {
+        console.log('I spent' , amount);
+        return amount;
+    },
+};
+
+const greetPerson = (person: IsPerson) => {
+    console.log('hello ', person.name);
+};
+
+greetPerson(me);
+
+console.log(me);
+
+
 
 const invOne = new Invoice('Mario', 'work on website', 25);
 const invTwo = new Invoice('Luigi', 'clean street', 65);

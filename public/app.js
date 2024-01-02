@@ -1,8 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const invoice_1 = require("./classes/invoice");
-const invOne = new invoice_1.Invoice('Mario', 'work on website', 25);
-const invTwo = new invoice_1.Invoice('Luigi', 'clean street', 65);
+const invoice_js_1 = require("./classes/invoice.js");
+;
+const me = {
+    name: 'Shaun',
+    age: 30,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spent', amount);
+        return amount;
+    },
+};
+const greetPerson = (person) => {
+    console.log('hello ', person.name);
+};
+greetPerson(me);
+console.log(me);
+const invOne = new invoice_js_1.Invoice('Mario', 'work on website', 25);
+const invTwo = new invoice_js_1.Invoice('Luigi', 'clean street', 65);
 let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
