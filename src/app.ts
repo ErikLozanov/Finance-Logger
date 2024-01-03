@@ -74,6 +74,11 @@ const amount = document.querySelector('#amount') as HTMLInputElement;
 form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
     
+    if(type.value === 'invoice') {
+        docOne = new Invoice(toFrom.value,amount.value, details.value);
+    } else {
+        doc = new Payment(toFrom.value,amount.value, details.value);
+    }
     console.log(
         type.value,
         toFrom.value,
