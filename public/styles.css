@@ -85,3 +85,8 @@ footer a{
   height: 100vh;
   visibility: hidden;
 }
+
+.header-nav {
+  width: 600px;
+  font-size: 400;
+}
