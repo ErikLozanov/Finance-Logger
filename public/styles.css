@@ -89,4 +89,7 @@ footer a{
 .header-nav {
   width: 600px;
   font-size: 400;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
